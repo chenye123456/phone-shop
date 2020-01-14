@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+		<!DOCTYPE mapper
+				PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+				"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.edu.ls.mapper.UserMapper">
+
+	    <select id="queryUserByUname" resultType="UserModel" >
+			SELECT id,uname,upass,mail,address FROM p_user where uname=#{xxx}
+		</select>
+
+</mapper>
